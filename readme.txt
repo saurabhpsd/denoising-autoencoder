@@ -72,3 +72,31 @@ References
 Based on standard convolutional autoencoder architecture for image denoising.
 
 TensorFlow/Keras official documentation.
+
+🧠 Architecture
+Encoder: Conv2D + MaxPooling + BatchNorm layers
+Latent Space: Bottleneck with compressed representation
+Decoder: Conv2D + UpSampling + BatchNorm layers
+Loss Function: Binary Crossentropy
+Optimizer: Adam
+
+📊 Evaluation Metrics
+Metric	Average
+PSNR	22.38 dB
+SSIM	0.7984
+
+💡 Applications
+🏥 Medical Imaging – denoise MRI, CT, ultrasound images
+🎥 Surveillance & Security – clean noisy video frames
+📷 Photography – enhance low-light smartphone images
+🛰️ Remote Sensing – improve clarity of satellite data
+🚗 Autonomous Vehicles – preprocess sensor inputs
+🔬 Scientific Imaging – denoise microscopy or astronomy data
+
+🔮 Future Enhancements
+Handle multiple noise types (salt-and-pepper, speckle)
+Train on real noisy datasets
+Optimize for real-time video streams
+Expand to high-res image support
+Add GUI using Tkinter/Flask
+Integrate advanced models like U-Net or GANs
